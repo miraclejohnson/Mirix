@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+    <div class="container">
+        <div class="add-flashcard-con">
+            <button id="add-flashcard" class="link">Add Flashcard</button>
+            <a class="link" href="index.html"><button>back</button></a>
+        </div>
+
+        <!-- Display Card Of Question And Answers Here-->
+        <div id="card-con">
+            <h1 no-cards style="font-family: 'Courier New', Courier, monospace; font-size:50px; text-align:center; opacity:0.6; font-weight:bold;">No flashcards here</h1>
+            <div class="card-list-container">
+            </div>
+        </div>
+    </div>
+    <!-- Input form for users to fill question and answer -->
+    <div class="question-container hide" id="add-question">
+        <h2>Add Flashcard</h2>
+            <div class="wrapper">
+            <!--Error message-->
+            <div class="error-con">
+                <span class="hide" id="error">Input fields cannot be empty!
+                </span>
+            </div>
+            <!-- Close Button-->
+            <i class="fa fa-close" id="close-btn"></i>
+            </div>
+
+            <label for="question">Question:</label>
+            <textarea
+             class="input"
+              id="question" placeholder="Type the question here..."
+              rows="2">
+            </textarea>
+            <label for="answer">Answer:</label>
+            <textarea class="input" id="answer" rows="4"
+            placeholder="Type the answer here...">
+            </textarea>
+            <button id="save-btn">Save</button>
+    </div>
+    <!-- Script -->
+        <script src="script.js"></script>
+    </body>
+</html>
